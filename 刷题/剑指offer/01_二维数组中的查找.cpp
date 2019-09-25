@@ -8,10 +8,10 @@ class Solution {
 public:
     bool Find(int target, vector<vector<int> > array) 
     {
-	if (array.empty() || array[0].empty())
-	{
-		return false;
-	}
+		if (array.empty() || array[0].empty())
+		{
+			return false;
+		}
         int row = array.size() - 1;
         int colu = 0;
         while(row >= 0 && colu < array[0].size())

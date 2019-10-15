@@ -49,7 +49,7 @@ private:
 	void DoubleRotateRL(AVLNode<T> *&node);
 	void DoubleRotateLR(AVLNode<T> *&node);
 
-	AVLNode<T> *node;
+	AVLNode<T> *_pnode;
 
 };
 
@@ -59,7 +59,7 @@ private:
 template <typename T>
 AVLTree<T>::AVLTree()
 {
-	node = nullptr;
+	_pnode = nullptr;
 }
 
 template <typename T>
@@ -85,13 +85,13 @@ bool AVLTree<T>::InitTree(const std::vector<T> &vec)
 template <typename T>
 bool AVLTree<T>::Insert(const T val)
 {
-	return DoInsert(node, val);
+	return DoInsert(_pnode, val);
 }
 
 template <typename T>
 bool AVLTree<T>::Delete(const T val)
 {
-	return DoDelete(node, val);
+	return DoDelete(_pnode, val);
 }
 
 template <typename T>
@@ -215,7 +215,7 @@ bool AVLTree<T>::DoDelete(AVLNode<T> *&node, const T val)
 template <typename T>
 bool AVLTree<T>::HasValue(T val)
 {
-	return DoFind(node, val);
+	return DoFind(_pnode, val);
 
 }
 
@@ -312,7 +312,7 @@ template <typename T>
 std::vector<T> AVLTree<T>::PerOrder()
 {
 	std::vector<T> result;
-	PreTravel(node, result);
+	PreTravel(_pnode, result);
 	return result;
 
 }
@@ -339,7 +339,7 @@ template <typename T>
 std::vector<T> AVLTree<T>::MidOrder()
 {
 	std::vector<T> result;
-	MidTravel(node, result);
+	MidTravel(_pnode, result);
 	return result;
 
 }
@@ -366,7 +366,7 @@ template <typename T>
 std::vector<T> AVLTree<T>::AfterOrder()
 {
 	std::vector<T> result;
-	AfterTravel(node, result);
+	AfterTravel(_pnode, result);
 	return result;
 
 }

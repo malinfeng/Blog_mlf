@@ -6,7 +6,7 @@
 #include <queue>
 
 //边是否有方向
-#define DIRECTION 1
+#define DIRECTION 0
 //最大顶点数量
 #define MAXVERTEX 20
 

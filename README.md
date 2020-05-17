@@ -17,7 +17,7 @@
 
 ## 计算机网络
 [一个简单的oop网络库](https://github.com/malinfeng/lion/)
-
+[基于protobuf的简单聊天室](https://github.com/malinfeng/chatroom/)
 
 ## 数据库
 
@@ -27,3 +27,7 @@
 [游戏服务器架构与优化](./读书笔记/游戏服务器架构与优化/游戏服务器架构与优化.md)  
 [Linux多线程服务器端编程](./读书笔记/Linux多线程服务器端编程/Linux多线程服务器端编程.md)  
 [Linux内核设计与实现](./读书笔记/Linux内核设计与实现/Linux内核设计与实现.md)  
+
+## 随笔笔记
+[protobufRPC框架及brpc代码解析](./随笔笔记/protobufRPC框架及brpc代码解析.md)  
+
